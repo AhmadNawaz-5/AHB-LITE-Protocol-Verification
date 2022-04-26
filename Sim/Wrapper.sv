@@ -1,4 +1,4 @@
-module wrapper_slave(DUT.slave dut);
+module wrapper (intf.DUT dut);
 ahb3lite_sram1rw slave1(
      .HRESETn(dut.HRESETn),
      .HCLK(dut.HCLK),
@@ -14,4 +14,4 @@ ahb3lite_sram1rw slave1(
      .HREADYOUT(dut.HREADYOUT),
      .HREADY(dut.HREADY),
      .HRESP(dut.HRESP));
-      endmodule:wrapper_slave
+      endmodule:wrapper
